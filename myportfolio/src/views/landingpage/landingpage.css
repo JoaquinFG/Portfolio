@@ -1,0 +1,54 @@
+.landingpage {
+  background-image: url(../../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.landing-grid {
+  text-align: center;
+}
+.avatar-img {
+  height: 50%;
+  padding-top: 3em;
+}
+.banner-text {
+  background-color: black;
+  opacity: 0.5;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.banner-text h2 {
+  padding-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-link i {
+  color: white;
+  font-size: 3em;
+  padding: 8px;
+}

@@ -3,13 +3,20 @@ import "./App.css";
 import { Layout, Header, Navigation, Drawer , Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from 'react-router-dom';
+import Logo from "./img/spain.png";
 
 function App() {
   return (
     <div>
-      <Layout className="bg-img">
-        <Header transparent title="My Portfolio">
-          <Navigation>
+      <Layout>
+        <Header
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+          title="My Portfolio"
+        >
+          <Navigation className="navi-position">
+            <Link>
+              <img className="img-lang" src={Logo} alt="Logo" />
+            </Link>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About me</Link>
             <Link to="/projects">Projects</Link>
