@@ -1,0 +1,18 @@
+.card {
+  width: "512px";
+  margin: "auto";
+}
+.card-title {
+  color: "#fff";
+  height: "176px";
+  background-image: url(http://www.getmdl.io/assets/demos/welcome_card.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.card-menu {
+  color: "#fff";
+}
+.mmargin{
+    display: flex;
+    margin: 2em;
+}

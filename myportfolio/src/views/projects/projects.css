@@ -1,0 +1,8 @@
+.content {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+.projects-grid{
+    display: flex;
+}

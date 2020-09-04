@@ -7,12 +7,9 @@ import Logo from "./img/spain.png";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Layout>
-        <Header
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-          title="My Portfolio"
-        >
+        <Header transparent title="My Portfolio">
           <Navigation className="navi-position">
             <Link>
               <img className="img-lang" src={Logo} alt="Logo" />
@@ -35,7 +32,7 @@ function App() {
           <Main />
         </Content>
       </Layout>
-    </div>
+    </React.Fragment>
   );
 }
 
