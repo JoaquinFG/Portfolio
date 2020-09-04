@@ -14,6 +14,7 @@ function App() {
             <Link>
               <img className="img-lang" src={Logo} alt="Logo" />
             </Link>
+            <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About me</Link>
             <Link to="/projects">Projects</Link>
@@ -22,6 +23,7 @@ function App() {
         </Header>
         <Drawer title="My Portfolio">
           <Navigation>
+            <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/aboutme">About me</Link>
             <Link to="/projects">Projects</Link>

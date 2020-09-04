@@ -41,11 +41,12 @@ export default class projects extends Component {
 
   render() {
     return (
-      <React.Fragment className="category-tabs">
+      <React.Fragment>
         <Tabs
           activeTab={this.setState.activeTab}
           onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
+          className="tabs"
         >
           <Tab>React</Tab>
           <Tab>HTML/CSS</Tab>
