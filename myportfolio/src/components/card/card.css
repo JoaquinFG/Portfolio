@@ -1,18 +1,16 @@
 .card {
-  width: "512px";
-  margin: "auto";
+  margin: auto;
 }
 .card-title {
-  color: "#fff";
-  height: "176px";
-  background-image: url(http://www.getmdl.io/assets/demos/welcome_card.jpg);
-  background-position: center;
+  color: #fff;
+  height: 176px;
+  background-image: url(https://www.arsys.es/blog/wp-content/uploads/2017/04/React.jpg);
+  background-position: 40%;
   background-size: cover;
 }
 .card-menu {
-  color: "#fff";
+  color: #fff;
 }
 .mmargin{
-    display: flex;
-    margin: 2em;
+    margin-top: 2em;
 }

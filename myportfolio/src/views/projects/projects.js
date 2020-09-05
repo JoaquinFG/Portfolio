@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Tabs, Tab, Grid, Cell } from "react-mdl";
-import Card from '../../components/card/card.js';
-import './projects.css';
+import { Tabs, Tab } from "react-mdl";
+import Card from "../../components/card/card.js";
+import "./projects.css";
 
 export default class projects extends Component {
   constructor(props) {
@@ -12,10 +12,16 @@ export default class projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <div className="projects-grid">
-          <Card />
-          <Card />
-          <Card />
+        <div className="row">
+          <div className="col-lg-4 col-md-6 col-sm-12">
+            <Card />
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+            <Card />
+          </div>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+            <Card />
+          </div>
         </div>
       );
     } else if (this.state.activeTab === 1) {
@@ -54,13 +60,7 @@ export default class projects extends Component {
           <Tab>MySQL</Tab>
         </Tabs>
 
-        <section className="projects-grid">
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-        </section>
+        <div className="project-size">{this.toggleCategories()}</div>
       </React.Fragment>
     );
   }

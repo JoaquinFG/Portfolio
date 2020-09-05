@@ -6,7 +6,7 @@ export default class card extends Component {
   render() {
     return (
       <div className="mmargin">
-        <Card shadow={0} className="card">
+        <Card className="card">
           <CardTitle className="card-title">Welcome</CardTitle>
           <CardText>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
