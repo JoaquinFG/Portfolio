@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import "./education.scss";
 
 export default class education extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Education</h1>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="education">
+        <h1>
+          <i class="fa fa-graduation-cap mr-5" aria-hidden="true"></i>
+          Education
+          <i class="fa fa-graduation-cap ml-5" aria-hidden="true"></i>
+        </h1>
+        <hr />
+      </div>
+    );
+  }
 }

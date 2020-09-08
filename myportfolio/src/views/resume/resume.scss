@@ -1,0 +1,38 @@
+.container {
+  margin-top: 3%;
+  color: white;
+}
+.container h1,
+p,
+h3,
+h4,
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.resume-right-col {
+  background: rgba(227, 227, 227, 0.3);
+  border-radius: 20px;
+  padding: 2em;
+}
+.resume-left-col {
+  text-align: center;
+}
+.resume-left-col img {
+  height: 200px;
+}
+h2 {
+  color: white;
+}
+h4 {
+  color: grey;
+  text-align: left;
+}
+hr {
+  border-top: 3px solid white;
+  width: 50%;
+}
+p {
+  color: white;
+  text-align: left;
+}
