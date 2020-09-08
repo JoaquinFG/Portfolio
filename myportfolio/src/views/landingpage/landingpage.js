@@ -1,41 +1,59 @@
 import React, { Component } from "react";
-import { Grid, Cell } from "react-mdl";
-import "./landingpage.css";
+import { Grid } from "react-mdl";
+import "./landingpage.scss";
 import Avatar from "../../img/avatar.png";
+import Carousel from "../../components/carousel/carousel.js";
 
 export default class landingpage extends Component {
   render() {
     return (
-      <React.Fragment className="landingpage">
+      <React.Fragment>
         <Grid className="landing-grid">
-          <Cell col={7}>
-            <div className="banner-text">
-              <h2>Joaquín Ferreira García</h2>
+          <div className="row">
+            <div className="col-xl-10 col-lg-12 banner-text">
+              <h1>Joaquín Ferreira</h1>
               <hr />
-              <h1>Full Stack Web Developer</h1>
-              <hr />
-              
-              <p>HTML/CSS | Bootstrap | JavaScript | React | NodeJS</p>
+              <h2>Multiplatform App Developer</h2>
+              <br />
               <div className="social-link">
-                <a href="/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/JoaquinFG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-github-square" aria-hidden="true" />
+                </a>
+                <a
+                  href="https://twitter.com/Joakin_FG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-twitter-square" aria-hidden="true" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joaquinferreirag/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-linkedin-square" aria-hidden="true" />
-                </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-linkedin-square" aria-hidden="true" />
-                </a>
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <i className="fa fa-youtube-square" aria-hidden="true" />
+                <a
+                  href="https://www.facebook.com/joaquin.fg.16"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa fa-facebook-square" aria-hidden="true" />
                 </a>
               </div>
             </div>
-          </Cell>
-          <Cell col={3}>
-            <img className="avatar-land" src={Avatar} alt="Avatar"/>
-          </Cell>
+            <div className="col-2 banner-text">
+              <img className="avatar-img" src={Avatar} alt="Avatar" />
+            </div>
+          </div>
         </Grid>
+        <div className="carousel">
+          <Carousel />
+        </div>
       </React.Fragment>
     );
   }

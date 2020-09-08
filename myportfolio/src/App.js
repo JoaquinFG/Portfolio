@@ -1,18 +1,22 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import { Layout, Header, Navigation, Drawer , Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from 'react-router-dom';
-import Logo from "./img/spain.png";
+import SpLogo from "./img/spain.png";
+import EnLogo from "./img/england.png";
 
 function App() {
   return (
-    <React.Fragment>
+    <div className="header">
       <Layout>
         <Header transparent title="My Portfolio">
-          <Navigation className="navi-position">
+          <Navigation>
             <Link>
-              <img className="img-lang" src={Logo} alt="Logo" />
+              <img className="img-lang" src={SpLogo} alt="Spain Flag" />
+            </Link>
+            <Link to="/">
+              <img className="img-lang" src={EnLogo} alt="England Flag" />
             </Link>
             <Link to="/">Home</Link>
             <Link to="/resume">Resume</Link>
@@ -34,7 +38,7 @@ function App() {
           <Main />
         </Content>
       </Layout>
-    </React.Fragment>
+    </div>
   );
 }
 
