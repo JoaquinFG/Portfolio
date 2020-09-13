@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import "./landingpage.scss";
 import { Link } from "react-router-dom";
-import Avatar from '../../img/avatar.png';
 
 export default class landingpage extends Component {
   render() {

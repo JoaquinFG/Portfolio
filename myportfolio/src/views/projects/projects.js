@@ -3,6 +3,7 @@ import { Tabs, Tab } from "react-mdl";
 import Card from "../../components/card/card.js";
 import Carousel from "../../components/carousel/carousel.js";
 import "./projects.scss";
+import Nav from "../../components/Nav/nav";
 
 export default class projects extends Component {
   constructor(props) {
@@ -51,6 +52,7 @@ export default class projects extends Component {
   render() {
     return (
       <React.Fragment>
+        <Nav />
         <Tabs
           activeTab={this.setState.activeTab}
           onChange={(tabId) => this.setState({ activeTab: tabId })}

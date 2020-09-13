@@ -7,13 +7,13 @@ $animationSpeed: 20s;
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	100% { transform: translateX(calc(-120px * 7))}
 }
 
 
 // Styling
 .slider {
-	height: 100px;
+	height: 50px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
@@ -23,7 +23,7 @@ $animationSpeed: 20s;
 	&::before,
 	&::after {
 		content: "";
-		height: 100px;
+		height: 50px;
 		position: absolute;
 		width: 200px;
 		z-index: 2;
@@ -47,7 +47,7 @@ $animationSpeed: 20s;
 	}
 	
 	.slide img{
-		height: 100px;
-		width: 250px;
+		height: 50px;
+		width: 120px;
 	}
 }
