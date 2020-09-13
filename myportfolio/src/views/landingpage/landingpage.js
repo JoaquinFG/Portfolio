@@ -10,11 +10,11 @@ export default class landingpage extends Component {
           <Cell col={5}></Cell>
           <Cell col={7}>
             <div className="banner-text">
-              <h1>Joaquín Ferreira</h1>
-              <hr />
-              <h2>Multiplatform App Developer</h2>
+              <h1 className="anim-name">Joaquín Ferreira</h1>
+              <hr className="anim-hr" />
+              <h2 className="anim-h2">Multiplatform App Developer</h2>
               <br />
-              <div className="social-link">
+              <div className="social-link anim-socialLinks">
                 <a
                   href="https://github.com/JoaquinFG"
                   target="_blank"

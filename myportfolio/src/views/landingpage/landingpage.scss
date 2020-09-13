@@ -36,15 +36,96 @@
   color: white;
   font-size: 3em;
   padding: 8px;
+  transition: 0s color;
+}
+.social-link i:hover {
+  color: #daa520;
+  transition-duration: 0.5s;
 }
 .carousel {
   text-align: center;
   margin: 50px auto;
 }
 
-@media (max-width: 768px) {
-  .avatar-img {
-    width: 300%;
-    margin-left: -100%;
+/* ---------------- Animations --------------- */
+
+.anim-name {
+  animation-name: anim-name;
+  animation-delay: 0s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-name {
+  from {
+    opacity: 0;
+    font-size: 10px;
+  }
+  to {
+    opacity: 1;
+    font-size: 55px;
+  }
+}
+
+.anim-socialLinks {
+  animation-name: anim-socialLinks;
+  animation-delay: 0s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-socialLinks {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.anim-hr {
+  animation-name: anim-hr;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-hr {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+.anim-h2 {
+  animation-name: anim-h2;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-h2 {
+  from {
+    color: #daa520;
+  }
+  to {
+    color: white;
+  }
+}
+
+/* --------------- Media Queries -------------- */
+
+@media (max-width: 576px) {
+  @keyframes anim-name {
+    from {
+      opacity: 0;
+      font-size: 1px;
+    }
+    to {
+      opacity: 1;
+      font-size: 40px;
+    }
   }
 }
