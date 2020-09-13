@@ -2,5 +2,27 @@
   width: 3em;
 }
 .marginb{
-    margin-bottom: 60px;
+    margin-bottom: 75px;
+}
+.navBar a {
+  text-decoration: none;
+}
+.undline {
+  line-height: 3;
+  position: relative;
+}
+.undline:before {
+  position: absolute;
+  bottom: 20px;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #daa520;
+  transition: all .3s;
+}
+.undline:hover:before {
+  width: 50%;
+}
+.mov-right:before {
+  left: 0;
 }

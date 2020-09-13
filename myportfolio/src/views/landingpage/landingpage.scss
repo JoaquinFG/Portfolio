@@ -27,17 +27,17 @@
   margin: auto;
 }
 
-.navBar a {
+.navBarLand a {
   text-decoration: none;
   color: white;
   text-align: center;
   margin: 20px;
 }
-.undline {
+.undlineLand {
   line-height: 3;
   position: relative;
 }
-.undline:before {
+.undlineLand:before {
   position: absolute;
   bottom: 0;
   content: "";
@@ -46,10 +46,10 @@
   background-color: #daa520;
   transition: all .3s;
 }
-.undline:hover:before {
+.undlineLand:hover:before {
   width: 50%;
 }
-.mov-right:before {
+.mov-rightLand:before {
   left: 0;
 }
 
@@ -97,7 +97,7 @@
 .anim-socialLinks {
   animation-name: anim-socialLinks;
   animation-delay: 0s;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -128,8 +128,8 @@
 
 .anim-navBar a{
   animation-name: anim-navBar;
-  animation-delay: 3s;
-  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -155,5 +155,11 @@
       opacity: 1;
       font-size: 40px;
     }
+  }
+}
+
+@media (max-width: 845px){
+  .navBar{
+    display:none !important;
   }
 }

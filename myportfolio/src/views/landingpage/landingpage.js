@@ -14,20 +14,20 @@ export default class landingpage extends Component {
               <h1 className="anim-name">Joaquín Ferreira</h1>
               <h2>Multiplatform App Developer</h2>
               <hr className="anim-hr" />
-              <div className="mt-4 navBar anim-navBar">
-                <Link className="undline right-mov" to="/">
+              <div className="mt-4 navBarLand anim-navBar">
+                <Link className="undlineLand right-movLand" to="/">
                   Home
                 </Link>
-                <Link className="undline right-mov" to="/resume">
+                <Link className="undlineLand right-movLand" to="/resume">
                   Resume
                 </Link>
-                <Link className="undline right-mov" to="/projects">
+                <Link className="undlineLand right-movLand" to="/projects">
                   Projects
                 </Link>
-                <Link className="undline right-mov" to="/aboutme">
+                <Link className="undlineLand right-movLand" to="/aboutme">
                   About me
                 </Link>
-                <Link className="undline right-mov" to="/contact">
+                <Link className="undlineLand right-movLand" to="/contact">
                   Contact
                 </Link>
               </div>
