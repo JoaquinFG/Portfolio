@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import "./contact.scss";
-import Avatar from "../../img/avatar.png";
+import Avatar from "../../img/avatar-bw.png";
 import Nav from "../../components/Nav/nav";
 
 export default class contact extends Component {
@@ -23,7 +23,7 @@ export default class contact extends Component {
             </Cell>
             <Cell col={6}>
               <h2>Contact me</h2>
-              <hr />
+              <hr className="anim-hr2" />
               <div className="contact-list">
                 <List>
                   <ListItem>

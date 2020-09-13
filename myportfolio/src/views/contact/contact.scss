@@ -5,12 +5,12 @@
   padding-top: 2em;
 }
 .contact-grid {
-  background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   text-align: center;
   justify-content: center;
   width: 80%;
-  color: black;
+  color: white;
 }
 .avatar {
   width: 50%;
@@ -23,9 +23,8 @@
   font-family: "Oxygen", sans-serif;
 }
 .contact-grid hr {
-  border-top: 2px dotted white;
-  width: 80%;
-  margin: auto;
+  border-top: 2px solid #daa520;
+  width: 100%;
 }
 .contact-list {
   margin: 2%;
