@@ -1,7 +1,23 @@
 .container {
-  margin-top: 3%;
+  margin-top: 5%;
   color: white;
+  position: relative;
+  border-radius: 20px;
+  padding: 2%;
+  background: rgba(0, 0, 0, 0.3);
 }
+/* .container::before {
+  content: "";
+  background-image: url(../../img/background3.jpg);
+  background-size: cover;
+  position: absolute;
+  border-radius: 20px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+} */
 .container h1,
 p,
 h3,
@@ -10,29 +26,32 @@ h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.resume-right-col {
-  background: rgba(227, 227, 227, 0.3);
-  border-radius: 20px;
-  padding: 2em;
-}
-.resume-left-col {
-  text-align: center;
-}
-.resume-left-col img {
-  height: 200px;
-}
-h2 {
-  color: white;
-}
+
 h4 {
-  color: grey;
   text-align: left;
 }
-hr {
-  border-top: 3px solid white;
-  width: 50%;
+.container hr {
+  border-top: 2px solid #daa520;
+  width: 20%;
 }
-p {
-  color: white;
-  text-align: left;
+
+
+/* ------------- Resume Animations -------------- */
+
+.anim-container {
+  animation-name: anim-container;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-container {
+  from {
+    opacity: 0;
+    margin-top: 10%;
+  }
+  to {
+    opacity: 1;
+    margin-top: 5%;
+  }
 }

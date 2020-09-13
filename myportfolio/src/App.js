@@ -11,9 +11,9 @@ function App() {
         <Drawer title="Joaquín Ferreira">
           <Navigation>
             <Link to="/">Home</Link>
+            <Link to="/aboutme">About me</Link>
             <Link to="/resume">Resume</Link>
             <Link to="/projects">Projects</Link>
-            <Link to="/aboutme">About me</Link>
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Drawer>

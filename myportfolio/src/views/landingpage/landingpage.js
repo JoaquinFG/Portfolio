@@ -18,14 +18,14 @@ export default class landingpage extends Component {
                 <Link className="undlineLand right-movLand" to="/">
                   Home
                 </Link>
+                <Link className="undlineLand right-movLand" to="/aboutme">
+                  About me
+                </Link>
                 <Link className="undlineLand right-movLand" to="/resume">
                   Resume
                 </Link>
                 <Link className="undlineLand right-movLand" to="/projects">
                   Projects
-                </Link>
-                <Link className="undlineLand right-movLand" to="/aboutme">
-                  About me
                 </Link>
                 <Link className="undlineLand right-movLand" to="/contact">
                   Contact

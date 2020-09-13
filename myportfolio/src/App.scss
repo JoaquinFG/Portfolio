@@ -2,3 +2,20 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* ---------- Global Animations --------------- */
+
+.anim-hr {
+  animation-name: anim-hr;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-hr {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}

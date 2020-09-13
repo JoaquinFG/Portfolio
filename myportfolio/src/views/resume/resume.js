@@ -1,23 +1,19 @@
 import React, { Component } from "react";
 import "./resume.scss";
-import Avatar from "../../img/avatar.png";
 import Education from "../../components/education/education";
-import Nav from '../../components/Nav/nav';
+import Nav from "../../components/Nav/nav";
 
 export default class resume extends Component {
   render() {
     return (
       <React.Fragment>
-        <Nav/>
-        <div className="container">
+        <Nav />
+        <div className="container anim-container">
+          <h2>RESUME</h2>
+          <hr className="anim-hr2" />
           <div className="row">
             <div className="col-lg-4 col-sm-12">
-              <div className="resume-left-col">
-                <img src={Avatar} alt="Avatar" />
-              </div>
-              <h2>Joaquín Ferreira</h2>
-              <h4>Developer</h4>
-              <hr />
+              <h3>Developer</h3>
               <p>
                 The development of my aptitudes and abilities through the
                 incorporation of new knowledge in this sector have made me able
@@ -37,8 +33,7 @@ export default class resume extends Component {
               Platzi y OpenWebinars.
             </p> */}
             </div>
-            <div className="col-1"></div>
-            <div className="col-lg-7 col-sm-12 resume-right-col">
+            <div className="col-lg-8 col-sm-12">
               <Education />
             </div>
           </div>

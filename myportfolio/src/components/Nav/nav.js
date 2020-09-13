@@ -21,14 +21,14 @@ export default class nav extends Component {
               <Link className="undline right-mov" to="/">
                 Home
               </Link>
+              <Link className="undline right-mov" to="/aboutme">
+                About me
+              </Link>
               <Link className="undline right-mov" to="/resume">
                 Resume
               </Link>
               <Link className="undline right-mov" to="/projects">
                 Projects
-              </Link>
-              <Link className="undline right-mov" to="/aboutme">
-                About me
               </Link>
               <Link className="undline right-mov" to="/contact">
                 Contact

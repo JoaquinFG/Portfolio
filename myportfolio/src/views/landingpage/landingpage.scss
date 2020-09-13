@@ -22,7 +22,7 @@
   color: white;
 }
 .banner-text hr {
-  border-top: 3px solid #daa520;
+  border-top: 2px solid #daa520;
   width: 40%;
   margin: auto;
 }
@@ -42,12 +42,12 @@
   bottom: 0;
   content: "";
   width: 0;
-  height: 3px;
+  height: 2px;
   background-color: #daa520;
   transition: all .3s;
 }
 .undlineLand:hover:before {
-  width: 50%;
+  width: 60%;
 }
 .mov-rightLand:before {
   left: 0;
@@ -107,22 +107,6 @@
   }
   to {
     width: 50%;
-  }
-}
-
-.anim-hr {
-  animation-name: anim-hr;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes anim-hr {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 40%;
   }
 }
 
