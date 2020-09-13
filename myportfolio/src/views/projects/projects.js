@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Tabs, Tab } from "react-mdl";
 import Card from "../../components/card/card.js";
-import "./projects.css";
+import Carousel from "../../components/carousel/carousel.js";
+import "./projects.scss";
 
 export default class projects extends Component {
   constructor(props) {
@@ -26,8 +27,10 @@ export default class projects extends Component {
       );
     } else if (this.state.activeTab === 1) {
       return (
-        <div>
-          <h1>This is HTML/CSS</h1>
+        <div className="row">
+          <div className="col-lg-4 col-md-6 col-sm-12">
+            <Card />
+          </div>
         </div>
       );
     } else if (this.state.activeTab === 2) {
@@ -61,6 +64,9 @@ export default class projects extends Component {
         </Tabs>
 
         <div className="project-size">{this.toggleCategories()}</div>
+        <div className="carousel">
+          <Carousel />
+        </div>
       </React.Fragment>
     );
   }

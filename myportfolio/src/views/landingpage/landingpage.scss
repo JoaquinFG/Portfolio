@@ -1,38 +1,30 @@
 .landing-grid {
   text-align: center;
 }
-.avatar-img{
-  width: 200%;
-  margin-top: 20%;
-  margin-left: -40%;
-}
 .banner-text {
   width: 100%;
   margin: auto;
   margin-top: 5%;
 }
 .banner-text h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-top: 10px;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
   color: white;
 }
 .banner-text h1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 66px;
+  margin-top: 200px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 55px;
   font-weight: bold;
   color: white;
 }
 .banner-text hr {
   border-top: 1px double white;
-  width: 50%;
+  width: 30%;
   margin: auto;
-}
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
 }
 .social-link {
   display: flex;
@@ -45,18 +37,13 @@
   font-size: 3em;
   padding: 8px;
 }
-.carousel{
+.carousel {
   text-align: center;
   margin: 50px auto;
 }
-@media (max-width: 768px){
-  .avatar-img{
-    width: 300%;
-    margin-left: -100%;
-  }
-}
-@media (max-width: 768px){
-  .avatar-img{
+
+@media (max-width: 768px) {
+  .avatar-img {
     width: 300%;
     margin-left: -100%;
   }

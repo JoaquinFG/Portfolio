@@ -1,16 +1,15 @@
 import React, { Component } from "react";
-import { Grid } from "react-mdl";
+import { Grid, Cell } from "react-mdl";
 import "./landingpage.scss";
-import Avatar from "../../img/avatar.png";
-import Carousel from "../../components/carousel/carousel.js";
 
 export default class landingpage extends Component {
   render() {
     return (
       <React.Fragment>
         <Grid className="landing-grid">
-          <div className="row">
-            <div className="col-xl-10 col-lg-12 banner-text">
+          <Cell col={5}></Cell>
+          <Cell col={7}>
+            <div className="banner-text">
               <h1>Joaquín Ferreira</h1>
               <hr />
               <h2>Multiplatform App Developer</h2>
@@ -46,14 +45,8 @@ export default class landingpage extends Component {
                 </a>
               </div>
             </div>
-            <div className="col-2 banner-text">
-              <img className="avatar-img" src={Avatar} alt="Avatar" />
-            </div>
-          </div>
+          </Cell>
         </Grid>
-        <div className="carousel">
-          <Carousel />
-        </div>
       </React.Fragment>
     );
   }
