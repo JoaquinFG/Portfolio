@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import "./landingpage.scss";
+import { Link } from "react-router-dom";
+import Avatar from '../../img/avatar.png';
 
 export default class landingpage extends Component {
   render() {
@@ -11,8 +13,25 @@ export default class landingpage extends Component {
           <Cell col={7}>
             <div className="banner-text">
               <h1 className="anim-name">Joaquín Ferreira</h1>
+              <h2>Multiplatform App Developer</h2>
               <hr className="anim-hr" />
-              <h2 className="anim-h2">Multiplatform App Developer</h2>
+              <div className="mt-4 navBar anim-navBar">
+                <Link className="undline right-mov" to="/">
+                  Home
+                </Link>
+                <Link className="undline right-mov" to="/resume">
+                  Resume
+                </Link>
+                <Link className="undline right-mov" to="/projects">
+                  Projects
+                </Link>
+                <Link className="undline right-mov" to="/aboutme">
+                  About me
+                </Link>
+                <Link className="undline right-mov" to="/contact">
+                  Contact
+                </Link>
+              </div>
               <br />
               <div className="social-link anim-socialLinks">
                 <a

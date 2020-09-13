@@ -22,10 +22,37 @@
   color: white;
 }
 .banner-text hr {
-  border-top: 1px double white;
-  width: 30%;
+  border-top: 3px solid #daa520;
+  width: 40%;
   margin: auto;
 }
+
+.navBar a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+.undline {
+  line-height: 3;
+  position: relative;
+}
+.undline:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #daa520;
+  transition: all .3s;
+}
+.undline:hover:before {
+  width: 50%;
+}
+.mov-right:before {
+  left: 0;
+}
+
 .social-link {
   display: flex;
   justify-content: space-between;
@@ -95,18 +122,18 @@
     width: 0%;
   }
   to {
-    width: 30%;
+    width: 40%;
   }
 }
 
-.anim-h2 {
-  animation-name: anim-h2;
+.anim-navBar a{
+  animation-name: anim-navBar;
   animation-delay: 3s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-@keyframes anim-h2 {
+@keyframes anim-navBar {
   from {
     color: #daa520;
   }
@@ -114,6 +141,7 @@
     color: white;
   }
 }
+
 
 /* --------------- Media Queries -------------- */
 
