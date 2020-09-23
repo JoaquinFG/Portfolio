@@ -14,7 +14,7 @@ export default class resume extends Component {
           <div className="row">
             <div className="col-lg-4 col-sm-12">
               <h3>Developer</h3>
-              <p>
+              <p className="font-italic">
                 The development of my aptitudes and abilities through the
                 incorporation of new knowledge in this sector have made me able
                 to achieve the title of Technician in Multiplatform Applications

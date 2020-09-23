@@ -19,3 +19,20 @@
     width: 40%;
   }
 }
+
+.anim-hr2 {
+  animation-name: anim-hr2;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-hr2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+

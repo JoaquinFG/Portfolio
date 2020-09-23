@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import "./contact.scss";
-import Avatar from "../../img/avatar-bw.png";
 import Nav from "../../components/Nav/nav";
 
 export default class contact extends Component {
@@ -13,7 +12,6 @@ export default class contact extends Component {
           <Grid className="contact-grid">
             <Cell col={6}>
               <h2>Joaquín Ferreira</h2>
-              <img className="avatar" src={Avatar} alt="Avatar" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
