@@ -41,3 +41,120 @@ ul li span{
   font-size: 120%;
   font-weight: bold;
 }
+
+.progress{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.progress-bar{
+  background: #757575;
+}
+.aboutLinks{
+  padding: 0 3%;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.aboutLinks:hover{
+  color: white;
+  background-color: #daa520;
+}
+
+//-------------- Animaciones ---------------
+
+.anim-progress-html {
+  animation-name: anim-progress-html;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.anim-progress-css {
+  animation-name: anim-progress-css;
+  animation-delay: 3.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+.anim-progress-js {
+  animation-name: anim-progress-js;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-js {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.anim-progress-react {
+  animation-name: anim-progress-react;
+  animation-delay: 4.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-react {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+.anim-progress-node {
+  animation-name: anim-progress-node;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-node {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.anim-progress-php {
+  animation-name: anim-progress-php;
+  animation-delay: 5.5s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-progress-php {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+

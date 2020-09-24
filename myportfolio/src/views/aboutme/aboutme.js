@@ -35,23 +35,26 @@ export default class aboutme extends Component {
                       September 1987
                     </li>
                     <li>
-                      <span>Website </span>
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
-                      www.joaquinferreira.com
-                    </li>
-                    <li>
                       <span>Phone </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i> (+34)
                       686 592 376
+                    </li>
+                    <li>
+                      <span>Website </span>
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="aboutLinks"
+                        href="https://www.joaquinferreira.com"
+                      >
+                        www.joaquinferreira.com
+                      </a>
                     </li>
                   </ul>
                 </div>
                 <div className="col-6">
                   <ul>
-                    <li>
-                      <span>Linkedin </span>
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i> 33
-                    </li>
                     <li>
                       <span>Email </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
@@ -61,6 +64,18 @@ export default class aboutme extends Component {
                       <span>City </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i> Santa
                       Cruz, Tenerife, Spain
+                    </li>
+                    <li>
+                      <span>Linkedin </span>
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="aboutLinks"
+                        href="https://www.linkedin.com/in/joaquinferreirag/"
+                      >
+                        Joaquin Ferreira
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -78,6 +93,38 @@ export default class aboutme extends Component {
                 y, al mismo tiempo, que me permita desarrollarme
                 profesionalmente.
               </p> */}
+            </div>
+          </div>
+          <h4>SKILLS</h4>
+          <hr className="anim-hr2" />
+          <div className="skills row">
+            <div className="col-lg-6 col-sm-12">
+              HTML
+              <div class="progress">
+                <div class="progress-bar anim-progress-html"></div>
+              </div>
+              CSS
+              <div class="progress">
+                <div class="progress-bar anim-progress-css"></div>
+              </div>
+              JAVASCRIPT
+              <div class="progress">
+                <div class="progress-bar anim-progress-js"></div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-12">
+              REACT
+              <div class="progress">
+                <div class="progress-bar anim-progress-react"></div>
+              </div>
+              NODE.JS
+              <div class="progress">
+                <div class="progress-bar anim-progress-node"></div>
+              </div>
+              BOOTSTRAP
+              <div class="progress">
+                <div class="progress-bar anim-progress-php"></div>
+              </div>
             </div>
           </div>
         </div>
