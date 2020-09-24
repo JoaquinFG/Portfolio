@@ -36,22 +36,3 @@ h4 {
 }
 
 
-/* ------------- Resume Animations -------------- */
-
-.anim-container {
-  animation-name: anim-container;
-  animation-delay: 0s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes anim-container {
-  from {
-    opacity: 0;
-    margin-top: 10%;
-  }
-  to {
-    opacity: 1;
-    margin-top: 5%;
-  }
-}
