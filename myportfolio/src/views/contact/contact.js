@@ -1,9 +1,32 @@
 import React, { Component } from "react";
 import Nav from "../../components/Nav/nav";
 import "./contact.scss";
+import emailjs from "emailjs-com";
 
 export default class contact extends Component {
   render() {
+
+    function sendEmail(e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "gmail",
+          "template_tdspxu9",
+          e.target,
+          "user_vRJbFCgUOWERhgJkQ8RBD"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    }
+
     return (
       <React.Fragment>
         <Nav />
@@ -58,11 +81,7 @@ export default class contact extends Component {
               </div>
             </div>
             <div className="col-lg-6 col-sm-12 form-contact">
-              <form
-                action="forms/contact.php"
-                method="post"
-                className="php-email-form mt-4"
-              >
+              <form onSubmit={sendEmail} className="php-email-form mt-4">
                 <div className="form-row">
                   <div className="col-md-6 form-group">
                     <input
@@ -112,17 +131,12 @@ export default class contact extends Component {
                   ></textarea>
                   <div className="validate"></div>
                 </div>
-                {/* <div className="mb-3">
-                  <div className="loading">Loading</div>
-                  <div className="error-message"></div>
-                  <div className="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div> */}
                 <div className="text-center">
-                  <button className="btn" type="submit">
-                    Send Message
-                  </button>
+                  <input
+                    className="btn-submit"
+                    type="submit"
+                    value="Send Message"
+                  />
                 </div>
               </form>
             </div>

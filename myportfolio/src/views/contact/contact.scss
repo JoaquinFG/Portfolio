@@ -68,18 +68,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-.btn {
-  padding-left: 5%;
-  padding-right: 5%;
-  background: #daa520b2;
-  color: white;
-}
-.btn:hover {
-  background: #daa520;
-  font-weight: bold;
-  color: black;
-  transition-duration: 0.4s;
-}
+
 *,
 ::after,
 ::before {
@@ -110,7 +99,17 @@ input {
   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
   border-image: initial;
 }
-
+.btn-submit {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  background: #daa520b2 !important;
+}
+.btn-submit:hover {
+  background: #daa520 !important;
+  font-weight: bold;
+  color: black !important;
+  transition-duration: 0.4s !important;
+}
 //-------------- Animations ---------------------
 
 .anim-address {
@@ -132,7 +131,7 @@ input {
 }
 .anim-social {
   animation-name: anim-social;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -149,7 +148,7 @@ input {
 }
 .anim-email {
   animation-name: anim-email;
-  animation-delay: 1.5s;
+  animation-delay: 0.9s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
@@ -166,7 +165,7 @@ input {
 }
 .anim-call {
   animation-name: anim-call;
-  animation-delay: 2s;
+  animation-delay: 1.1s;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
