@@ -5,7 +5,8 @@ import emailjs from "emailjs-com";
 
 export default class contact extends Component {
   render() {
-
+    
+    // Send Email Function
     function sendEmail(e) {
       e.preventDefault();
 
@@ -73,7 +74,7 @@ export default class contact extends Component {
               </div>
               <div className="info anim-email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                Email me ➦ joaquinferreirag@gmail.com
+                Email me ➦ joaquindev@joaquinferreira.com
               </div>
               <div className="info anim-call">
                 <i class="fa fa-phone" aria-hidden="true"></i>

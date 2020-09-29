@@ -25,36 +25,37 @@
 }
 
 ul {
-  list-style: none; 
+  list-style: none;
 }
 
 ul li::before {
-  content: "\2022"; 
-  color:#daa520; 
-  font-weight: bold; 
-  display: inline-block; 
-  width: 3em; 
-  margin-left: -3em; 
+  content: "\2022";
+  color: #daa520;
+  font-weight: bold;
+  display: inline-block;
+  width: 3em;
+  margin-left: -3em;
 }
 
-ul li span{
+ul li span {
   font-size: 120%;
   font-weight: bold;
 }
 
-.progress{
+.progress {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.progress-bar{
+.progress-bar {
   background: #757575;
 }
-.aboutLinks{
+.aboutLinks {
   padding: 0 3%;
   color: white;
-  border-radius: 10px;
+  border: 1px solid #daa520;
+  border-radius: 5px;
 }
-.aboutLinks:hover{
+.aboutLinks:hover {
   color: white;
   background-color: #daa520;
 }
@@ -157,12 +158,11 @@ ul li span{
   }
 }
 
-.anim-link{
+.anim-link {
   animation-name: anim-link;
-  animation-delay: 0s;
-  animation-duration: 2.5s;
+  animation-delay: 3s;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
 }
 
 @keyframes anim-link {

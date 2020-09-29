@@ -30,7 +30,6 @@
 .navBarLand a {
   text-decoration: none;
   color: white;
-  text-align: center;
   margin: 20px;
 }
 .undlineLand {
@@ -54,9 +53,7 @@
 }
 
 .social-link {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
+  display: inline;
   margin: auto;
 }
 .social-link i {
@@ -133,6 +130,9 @@
   .navBar{
     display:none !important;
   }
+  .navBarLand{
+    display:none !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -165,11 +165,5 @@
   .banner-text h2{
     font-size: 25px;
   }
-  .social-link{
-    margin-left: 20%;
-  }
-  .undlineLand{
-    font-size: 12px;
-  }
-
+  
 }

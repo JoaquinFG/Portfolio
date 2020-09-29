@@ -10,7 +10,7 @@
   font-size: 2em;
 }
 .info a i {
-  margin-left: 5%;
+  margin-left: 3%;
   margin-right: 3%;
   font-size: 2em;
 }
@@ -20,6 +20,15 @@
 }
 .contact {
   padding: 1.5%;
+}
+.copyClass{
+  float: right;
+  margin: 7px 0 !important;
+  font-size: 1em !important;
+}
+.copyClass:hover{
+  color: #daa520;
+  transition-duration: 0.5s;
 }
 .form-contact {
   background: rgba(0, 0, 0, 0.418);
@@ -110,6 +119,7 @@ input {
   color: black !important;
   transition-duration: 0.4s !important;
 }
+
 //-------------- Animations ---------------------
 
 .anim-address {
