@@ -6,3 +6,16 @@
   margin-right: -10%;
 }
 
+/* --------------- Media Queries -------------- */
+
+@media (max-width: 768px) {
+  .col-left{
+    margin-left: 0;
+  }
+  .education h5{
+    font-size: 15px;
+  }
+  .education p{
+    font-size: 12px;
+  }
+}

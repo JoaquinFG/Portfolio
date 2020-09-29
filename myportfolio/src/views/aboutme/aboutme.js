@@ -27,7 +27,7 @@ export default class aboutme extends Component {
                 cualquier entorno de trabajo
               </p> */}
               <div className="row">
-                <div className="col-6">
+                <div className="col-lg-6 col-sm-12">
                   <ul>
                     <li>
                       <span>Birthday </span>
@@ -45,7 +45,7 @@ export default class aboutme extends Component {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="aboutLinks"
+                        className="aboutLinks anim-link"
                         href="https://www.joaquinferreira.com"
                       >
                         www.joaquinferreira.com
@@ -53,7 +53,7 @@ export default class aboutme extends Component {
                     </li>
                   </ul>
                 </div>
-                <div className="col-6">
+                <div className="col-lg-6 col-sm-12">
                   <ul>
                     <li>
                       <span>Email </span>
@@ -71,7 +71,7 @@ export default class aboutme extends Component {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="aboutLinks"
+                        className="aboutLinks anim-link"
                         href="https://www.linkedin.com/in/joaquinferreirag/"
                       >
                         Joaquin Ferreira
@@ -123,7 +123,7 @@ export default class aboutme extends Component {
               </div>
               BOOTSTRAP
               <div class="progress">
-                <div class="progress-bar anim-progress-php"></div>
+                <div class="progress-bar anim-progress-bootstrap"></div>
               </div>
             </div>
           </div>

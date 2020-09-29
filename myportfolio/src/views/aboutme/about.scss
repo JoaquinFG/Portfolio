@@ -52,7 +52,6 @@ ul li span{
 .aboutLinks{
   padding: 0 3%;
   color: white;
-  border: 1px solid white;
   border-radius: 10px;
 }
 .aboutLinks:hover{
@@ -74,7 +73,7 @@ ul li span{
     width: 0%;
   }
   to {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -90,7 +89,7 @@ ul li span{
     width: 0%;
   }
   to {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -142,19 +141,35 @@ ul li span{
   }
 }
 
-.anim-progress-php {
-  animation-name: anim-progress-php;
+.anim-progress-bootstrap {
+  animation-name: anim-progress-bootstrap;
   animation-delay: 5.5s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
-@keyframes anim-progress-php {
+@keyframes anim-progress-bootstrap {
   from {
     width: 0%;
   }
   to {
-    width: 80%;
+    width: 90%;
   }
 }
 
+.anim-link{
+  animation-name: anim-link;
+  animation-delay: 0s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim-link {
+  from {
+    background-color: #daa520;
+  }
+  to {
+    background-color: none;
+  }
+}

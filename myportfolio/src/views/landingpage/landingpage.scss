@@ -129,7 +129,14 @@
 
 /* --------------- Media Queries -------------- */
 
+@media (max-width: 845px){
+  .navBar{
+    display:none !important;
+  }
+}
+
 @media (max-width: 576px) {
+  
   @keyframes anim-name {
     from {
       opacity: 0;
@@ -142,8 +149,27 @@
   }
 }
 
-@media (max-width: 845px){
-  .navBar{
-    display:none !important;
+@media (max-width: 381px) {
+
+  @keyframes anim-name {
+    from {
+      opacity: 0;
+      font-size: 1px;
+    }
+    to {
+      opacity: 1;
+      font-size: 30px;
+    }
   }
+
+  .banner-text h2{
+    font-size: 25px;
+  }
+  .social-link{
+    margin-left: 20%;
+  }
+  .undlineLand{
+    font-size: 12px;
+  }
+
 }
