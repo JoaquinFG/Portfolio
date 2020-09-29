@@ -11,8 +11,7 @@ export default class contact extends Component {
   };
 
   render() {
-    //Copy Email Function
-
+    
     // Send Email Function
     function sendEmail(e) {
       e.preventDefault();
@@ -90,6 +89,9 @@ export default class contact extends Component {
                     <i class="fa fa-clone copyClass" aria-hidden="true"></i>
                   </button>
                 </CopyToClipboard>
+                {this.state.copied ? (
+                  <span className="copied">Copied!</span>
+                ) : null}
               </div>
               <div className="info anim-call">
                 <i class="fa fa-phone" aria-hidden="true"></i>

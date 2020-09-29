@@ -21,6 +21,9 @@
 .info span {
   font-size: 13px;
 }
+.copied{
+  color: #15ff00a6;
+}
 .contact {
   padding: 1.5%;
 }
@@ -213,22 +216,7 @@ input {
   }
 }
 
-.buttonCopy:active {
-  animation-name: buttonCopy;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
 
-@keyframes buttonCopy {
-  from {
-    background: #3cff0062;
-    border-radius: 5px;
-  }
-  to {
-    background: none;
-  }
-}
 /* --------------- Media Queries -------------- */
 
 @media (max-width: 768px) {
