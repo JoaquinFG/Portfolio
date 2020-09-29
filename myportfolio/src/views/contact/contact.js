@@ -2,10 +2,17 @@ import React, { Component } from "react";
 import Nav from "../../components/Nav/nav";
 import "./contact.scss";
 import emailjs from "emailjs-com";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default class contact extends Component {
+  state = {
+    value: "joaquindev@joaquinferreira.com",
+    copied: false,
+  };
+
   render() {
-    
+    //Copy Email Function
+
     // Send Email Function
     function sendEmail(e) {
       e.preventDefault();
@@ -74,7 +81,15 @@ export default class contact extends Component {
               </div>
               <div className="info anim-email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                Email me ➦ joaquindev@joaquinferreira.com
+                Email me ➦ <span>joaquindev@joaquinferreira.com</span>
+                <CopyToClipboard
+                  text={this.state.value}
+                  onCopy={() => this.setState({ copied: true })}
+                >
+                  <button className="buttonCopy">
+                    <i class="fa fa-clone copyClass" aria-hidden="true"></i>
+                  </button>
+                </CopyToClipboard>
               </div>
               <div className="info anim-call">
                 <i class="fa fa-phone" aria-hidden="true"></i>

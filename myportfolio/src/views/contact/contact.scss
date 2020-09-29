@@ -18,16 +18,38 @@
   color: #daa520;
   transition-duration: 0.5s;
 }
+.info span {
+  font-size: 13px;
+}
 .contact {
   padding: 1.5%;
 }
-.copyClass{
-  float: right;
-  margin: 7px 0 !important;
-  font-size: 1em !important;
+.copyClass {
+  font-size: 1.5em !important;
 }
-.copyClass:hover{
+.copyClass:hover {
   color: #daa520;
+  transition-duration: 0.5s;
+}
+.info button,
+.info button:focus,
+.info button:active {
+  outline: none;
+}
+.buttonCopy {
+  margin-left: 2%;
+  padding: 3px;
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  -webkit-user-select: none; /* for button */
+  -webkit-appearance: button; /* for input */
+  -moz-user-select: none;
+  -ms-user-select: none;
   transition-duration: 0.5s;
 }
 .form-contact {
@@ -191,17 +213,33 @@ input {
   }
 }
 
+.buttonCopy:active {
+  animation-name: buttonCopy;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes buttonCopy {
+  from {
+    background: #3cff0062;
+    border-radius: 5px;
+  }
+  to {
+    background: none;
+  }
+}
 /* --------------- Media Queries -------------- */
 
-@media (max-width: 768px){
-  .info{
+@media (max-width: 768px) {
+  .info {
     font-size: 12px;
   }
   .info i {
-  margin-right: 3%;
-}
-.info a i {
-  margin-left: 3%;
-  margin-right: 1%;
-}
+    margin-right: 3%;
+  }
+  .info a i {
+    margin-left: 3%;
+    margin-right: 1%;
+  }
 }
