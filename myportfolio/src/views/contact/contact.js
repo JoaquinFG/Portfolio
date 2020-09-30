@@ -3,6 +3,7 @@ import Nav from "../../components/Nav/nav";
 import "./contact.scss";
 import emailjs from "emailjs-com";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import swal from "sweetalert";
 
 export default class contact extends Component {
   state = {
@@ -35,7 +36,7 @@ export default class contact extends Component {
     }
     //Alert sent message
     function sentFunction() {
-      alert("Message sent successfully!");
+      swal("Good job!", "Message sent successfully!", "success");
     }
     return (
       <React.Fragment>
@@ -88,7 +89,12 @@ export default class contact extends Component {
                   text={this.state.value}
                   onCopy={() => this.setState({ copied: true })}
                 >
-                  <button className="buttonCopy">
+                  <button
+                    className="buttonCopy"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Copy email!"
+                  >
                     <i class="fa fa-clone copyClass" aria-hidden="true"></i>
                   </button>
                 </CopyToClipboard>
