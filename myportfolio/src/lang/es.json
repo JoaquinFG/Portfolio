@@ -1,0 +1,10 @@
+{
+    "locale": "en-mx",
+    "Link": {
+        "home": "Inicio",
+        "aboutme": "Sobre mi",
+        "resume": "Currículum",
+        "project": "Proyectos",
+        "contact": "Contacto"
+    }
+}

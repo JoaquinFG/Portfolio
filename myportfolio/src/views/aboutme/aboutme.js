@@ -58,7 +58,7 @@ export default class aboutme extends Component {
                     <li>
                       <span>Email </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
-                      joaquinferreirag@gmail.com
+                      joaquindev@joaquinferreira.com
                     </li>
                     <li>
                       <span>City </span>

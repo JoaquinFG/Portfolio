@@ -1,12 +1,28 @@
 .header{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .mdl-layout__drawer-button{
   background-color: rgba(255, 255, 255, 0.158);
   border-radius: 10px;
 }
-
+.mdl-layout__drawer{
+  background: rgb(29, 29, 29) !important;
+  border-right: 0px !important;
+  color: white !important;
+  transition-duration: 0.5s !important;
+}
+.mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title{
+  background: rgb(29, 29, 29) !important;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  color: white !important;
+}
+.mdl-layout__drawer:hover .mdl-navigation:hover .mdl-navigation__link:hover{
+  background-image: url(./img/background1.jpg) !important;
+}
+.mdl-navigation a:link{
+  text-decoration: none;
+}
 /* ---------- Global Animations --------------- */
 
 .anim-hr {

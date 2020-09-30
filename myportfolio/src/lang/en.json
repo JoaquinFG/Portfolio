@@ -1,0 +1,10 @@
+{
+    "locale": "en-us",
+    "Link": {
+        "home": "Home",
+        "aboutme": "About me",
+        "resume": "Resume",
+        "project": "Projects",
+        "contact": "Contact"
+    }
+}

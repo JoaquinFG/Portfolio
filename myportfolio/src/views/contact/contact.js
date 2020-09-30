@@ -33,7 +33,10 @@ export default class contact extends Component {
         );
       e.target.reset();
     }
-
+    //Alert sent message
+    function sentFunction() {
+      alert("Message sent successfully!");
+    }
     return (
       <React.Fragment>
         <Nav />
@@ -154,6 +157,7 @@ export default class contact extends Component {
                     className="btn-submit"
                     type="submit"
                     value="Send Message"
+                    onClick={sentFunction}
                   />
                 </div>
               </form>

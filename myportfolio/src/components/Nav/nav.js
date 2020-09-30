@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Layout, Header, Navigation } from "react-mdl";
-import SpLogo from "../../img/spain.png";
-import EnLogo from "../../img/england.png";
+/* import SpLogo from "../../img/spain.png";
+import EnLogo from "../../img/england.png"; */
 import "./nav.scss";
 
 export default class nav extends Component {
@@ -12,12 +12,12 @@ export default class nav extends Component {
         <Layout>
           <Header transparent title="Joaquín Ferreira">
             <Navigation className="navBar">
-              <Link>
+              {/* <Link>
                 <img className="img-lang" src={SpLogo} alt="Spain Flag" />
               </Link>
               <Link to="/">
                 <img className="img-lang" src={EnLogo} alt="England Flag" />
-              </Link>
+              </Link> */}
               <Link className="undline right-mov" to="/">
                 Home
               </Link>
