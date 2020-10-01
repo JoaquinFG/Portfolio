@@ -60,9 +60,9 @@ export default class aboutme extends Component {
                       años
                     </li>
                     <li>
-                      <span>Domicilio </span>
+                      <span>Dirección </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i> Santa
-                      Cruz, Tenerife, Spain
+                      Cruz, Tenerife, España
                     </li>
                     <li>
                       <span>Linkedin </span>
@@ -73,7 +73,7 @@ export default class aboutme extends Component {
                         className="aboutLinks anim-link"
                         href="https://www.linkedin.com/in/joaquinferreirag/"
                       >
-                        Joaquin Ferreira
+                        Joaquín Ferreira
                       </a>
                     </li>
                   </ul>
