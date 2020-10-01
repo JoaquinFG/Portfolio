@@ -12,23 +12,27 @@ export default class landingpage extends Component {
           <Cell col={7}>
             <div className="banner-text">
               <h1 className="anim-name">Joaquín Ferreira</h1>
-              <h2>Multiplatform App Developer</h2>
+              <h2>
+                Programador y Desarrollador de
+                <br />
+                Aplicaciones Multiplataformas
+              </h2>
               <hr className="anim-hr" />
               <div className="mt-4 navBarLand anim-navBar">
                 <Link className="undlineLand right-movLand" to="/">
-                  Home
+                  Inicio
                 </Link>
                 <Link className="undlineLand right-movLand" to="/aboutme">
-                  About me
+                  Sobre mi
                 </Link>
                 <Link className="undlineLand right-movLand" to="/resume">
-                  Resume
+                  Currículum
                 </Link>
                 <Link className="undlineLand right-movLand" to="/projects">
-                  Projects
+                  Proyectos
                 </Link>
                 <Link className="undlineLand right-movLand" to="/contact">
-                  Contact
+                  Contacto
                 </Link>
               </div>
               <br />
@@ -38,14 +42,14 @@ export default class landingpage extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-github-square" aria-hidden="true" />
+                  <i className="fa fa-github" aria-hidden="true" />
                 </a>
                 <a
                   href="https://twitter.com/Joakin_FG"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-twitter-square" aria-hidden="true" />
+                  <i className="fa fa-twitter" aria-hidden="true" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/joaquinferreirag/"
@@ -55,11 +59,11 @@ export default class landingpage extends Component {
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
                 <a
-                  href="https://www.facebook.com/joaquin.fg.16"
+                  href="https://t.me/Joaquin_fg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-facebook-square" aria-hidden="true" />
+                  <i className="fa fa-telegram" aria-hidden="true"></i>
                 </a>
               </div>
             </div>

@@ -19,19 +19,19 @@ export default class nav extends Component {
                 <img className="img-lang" src={EnLogo} alt="England Flag" />
               </Link> */}
               <Link className="undline right-mov" to="/">
-                Home
+                Inicio
               </Link>
               <Link className="undline right-mov" to="/aboutme">
-                About me
+                Sobre mi
               </Link>
               <Link className="undline right-mov" to="/resume">
-                Resume
+                Currículum
               </Link>
               <Link className="undline right-mov" to="/projects">
-                Projects
+                Proyectos
               </Link>
               <Link className="undline right-mov" to="/contact">
-                Contact
+                Contacto
               </Link>
             </Navigation>
           </Header>

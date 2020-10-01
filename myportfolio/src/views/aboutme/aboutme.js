@@ -9,38 +9,37 @@ export default class aboutme extends Component {
       <React.Fragment>
         <Nav />
         <div className="container anim-container">
-          <h2>ABOUT ME</h2>
+          <h2>SOBRE MI</h2>
           <hr className="anim-hr2" />
           <div className="row aboutMe">
             <div className="text-center col-lg-4 col-sm-12">
               <img className="avatar" src={Avatar} alt="Avatar" />
             </div>
             <div className="col-lg-8 col-sm-12">
-              <h3>Multiplatform App Developer</h3>
+              <h3>Programador y Desarrollador</h3>
               <hr className="anim-hr2" />
               <p className="font-italic">
-                I consider myself an efficient, effective person and I adapt
-                quickly to any work environment.
-              </p>
-              {/* <p>
+                {/* I consider myself an efficient, effective person and I adapt
+                quickly to any work environment.  */}
                 Me considero una persona eficiente, eficaz y me adapto rápido a
                 cualquier entorno de trabajo
-              </p> */}
+              </p>
               <div className="row">
                 <div className="col-lg-6 col-sm-12">
                   <ul>
                     <li>
-                      <span>Birthday </span>
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i> 18
-                      September 1987
+                      <span>Email </span>
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
+                      joaquindev@joaquinferreira.com
                     </li>
+
                     <li>
-                      <span>Phone </span>
+                      <span>Teléfono </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i> (+34)
                       686 592 376
                     </li>
                     <li>
-                      <span>Website </span>
+                      <span>Web </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
                       <a
                         target="_blank"
@@ -56,12 +55,12 @@ export default class aboutme extends Component {
                 <div className="col-lg-6 col-sm-12">
                   <ul>
                     <li>
-                      <span>Email </span>
-                      <i class="fa fa-arrow-right" aria-hidden="true"></i>{" "}
-                      joaquindev@joaquinferreira.com
+                      <span>Edad </span>
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> 33
+                      años
                     </li>
                     <li>
-                      <span>City </span>
+                      <span>Domicilio </span>
                       <i class="fa fa-arrow-right" aria-hidden="true"></i> Santa
                       Cruz, Tenerife, Spain
                     </li>
@@ -81,21 +80,21 @@ export default class aboutme extends Component {
                 </div>
               </div>
               <p className="font-italic">
-                As a recent graduate, I would love to become part of a company
-                where I can apply all my knowledge and, at the same time, allow
-                me to develop professionally. I am an organized person with a
-                great motivation, I am able to always give my best in any
-                project.
-              </p>
-              {/* <p>
                 Como recién graduado, me encantaría poder entrar a formar parte
                 de una empresa en la que poder aplicar todos mis conocimientos
                 y, al mismo tiempo, que me permita desarrollarme
                 profesionalmente.
+              </p>
+              {/* <p>
+                 As a recent graduate, I would love to become
+                part of a company where I can apply all my knowledge and, at the
+                same time, allow me to develop professionally. I am an organized
+                person with a great motivation, I am able to always give my best
+                in any project.
               </p> */}
             </div>
           </div>
-          <h4>SKILLS</h4>
+          <h4>HABILIDADES</h4>
           <hr className="anim-hr2" />
           <div className="skills row">
             <div className="col-lg-6 col-sm-12">

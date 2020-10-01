@@ -16,44 +16,56 @@ export default class projects extends Component {
           <hr className="anim-hr2" />
           <div className="row cards">
             <div className="col-lg-4 col-sm-12">
-              <a href="https://www.quimpi.com/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.showyourcompany.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="card anim-card1">
-                  <img class="card-img-top" src={quimpi} alt="Quimpi" />
-                  <div class="card-body">
-                    <h4 class="card-title">Quimpi camp</h4>
-                    <hr className="anim-hr3" />
-                    <p class="card-text">
-                      Quimpi Camp, the world's first starlight camp. For all
-                      ages.
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-lg-4 col-sm-12">
-              <a href="https://www.showyourcompany.com/" target="_blank" rel="noopener noreferrer">
-                <div class="card anim-card2">
                   <img class="card-img-top" src={syc} alt="SYC" />
                   <div class="card-body">
                     <h4 class="card-title">Show Your Company</h4>
                     <hr className="anim-hr3" />
                     <p class="card-text">
-                      Advertising and digital marketing company for public
-                      transport.
+                      Diseño web de la empresa de Publicidad y Marketing digital para Taxis,
+                      Autobuses o cualquier otro tipo de transporte público.
                     </p>
                   </div>
                 </div>
               </a>
             </div>
             <div className="col-lg-4 col-sm-12">
-              <a href="https://bebangarang.es/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.quimpi.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="card anim-card2">
+                  <img class="card-img-top" src={quimpi} alt="Quimpi" />
+                  <div class="card-body">
+                    <h4 class="card-title">Quimpi campamentos</h4>
+                    <hr className="anim-hr3" />
+                    <p class="card-text">
+                      Diseño web de Quimpi, el primer campamento starlight del
+                      mundo. Apto para todas las edades.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-lg-4 col-sm-12">
+              <a
+                href="https://bebangarang.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="card anim-card3">
                   <img class="card-img-top" src={bangarang} alt="Bangarang" />
                   <div class="card-body">
                     <h4 class="card-title">BeBangarang</h4>
                     <hr className="anim-hr3" />
                     <p class="card-text">
-                      Programmer in web design and development company.
+                      Diseño y desarrollo web utilizando diferentes tecnologías como HTML, CSS, JavaScript, React, NodeJS y uso de APIs.
                     </p>
                   </div>
                 </div>

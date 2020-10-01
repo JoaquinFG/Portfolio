@@ -36,36 +36,42 @@ export default class contact extends Component {
     }
     //Alert sent message
     function sentFunction() {
-      swal("Good job!", "Message sent successfully!", "success");
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById("message").value;
+      if(name && email && subject && message){
+        swal("Bien!", "Mensaje enviado correctamente!", "success");
+      }
     }
     return (
       <React.Fragment>
         <Nav />
         <div className="container anim-container">
-          <h2>CONTACT ME</h2>
+          <h2>CONTACTO</h2>
           <hr className="anim-hr2" />
           <div className="row contact">
             <div className="col-lg-6 col-sm-12">
               <div className="info anim-address">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                Address ➦ Santa Cruz de Tenerife, Spain
+                Dirección ➦ Santa Cruz de Tenerife, España
               </div>
               <div className="info anim-social">
                 <i class="fa fa-share-alt" aria-hidden="true"></i>
-                Social Profile ➦{" "}
+                Links personales ➦{" "}
                 <a
                   href="https://github.com/JoaquinFG"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-github-square" aria-hidden="true" />
+                  <i className="fa fa-github" aria-hidden="true" />
                 </a>
                 <a
                   href="https://twitter.com/Joakin_FG"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-twitter-square" aria-hidden="true" />
+                  <i className="fa fa-twitter" aria-hidden="true" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/joaquinferreirag/"
@@ -75,16 +81,16 @@ export default class contact extends Component {
                   <i className="fa fa-linkedin-square" aria-hidden="true" />
                 </a>
                 <a
-                  href="https://www.facebook.com/joaquin.fg.16"
+                  href="https://t.me/Joaquin_fg"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-facebook-square" aria-hidden="true" />
+                  <i className="fa fa-telegram" aria-hidden="true"></i>
                 </a>
               </div>
               <div className="info anim-email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                Email me ➦ <span>joaquindev@joaquinferreira.com</span>
+                Email ➦ <span>joaquindev@joaquinferreira.com</span>
                 <CopyToClipboard
                   text={this.state.value}
                   onCopy={() => this.setState({ copied: true })}
@@ -99,12 +105,12 @@ export default class contact extends Component {
                   </button>
                 </CopyToClipboard>
                 {this.state.copied ? (
-                  <span className="copied">Copied!</span>
+                  <span className="copied">Copiado!</span>
                 ) : null}
               </div>
               <div className="info anim-call">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                Call me ➦ (+34) 686 592 376
+                Teléfono ➦ (+34) 686 592 376
               </div>
             </div>
             <div className="col-lg-6 col-sm-12 form-contact">
@@ -116,9 +122,10 @@ export default class contact extends Component {
                       name="name"
                       className="form-control"
                       id="name"
-                      placeholder="Your Name"
-                      data-rule="minlen:4"
-                      data-msg="Please enter at least 4 chars"
+                      placeholder="Nombre"
+                      minLength="4"
+                      data-msg="Por favor escribe al menos 4 letras."
+                      required
                     />
                     <div className="validate"></div>
                   </div>
@@ -128,9 +135,10 @@ export default class contact extends Component {
                       className="form-control"
                       name="email"
                       id="email"
-                      placeholder="Your Email"
+                      placeholder="Email"
                       data-rule="email"
-                      data-msg="Please enter a valid email"
+                      data-msg="Por favor escribe un email válido"
+                      required
                     />
                     <div className="validate"></div>
                   </div>
@@ -141,9 +149,10 @@ export default class contact extends Component {
                     className="form-control"
                     name="subject"
                     id="subject"
-                    placeholder="Subject"
-                    data-rule="minlen:4"
-                    data-msg="Please enter at least 8 chars of subject"
+                    placeholder="Concepto"
+                    minLength="4"
+                    data-msg="Por favor escribe un concepto más largo"
+                    required
                   />
                   <div className="validate"></div>
                 </div>
@@ -151,10 +160,12 @@ export default class contact extends Component {
                   <textarea
                     className="form-control"
                     name="message"
+                    id="message"
                     rows="5"
                     data-rule="required"
-                    data-msg="Please write something for us"
-                    placeholder="Message"
+                    data-msg="Por favor escribe algo aquí"
+                    placeholder="Mensaje"
+                    required
                   ></textarea>
                   <div className="validate"></div>
                 </div>
@@ -162,7 +173,7 @@ export default class contact extends Component {
                   <input
                     className="btn-submit"
                     type="submit"
-                    value="Send Message"
+                    value="Enviar Mensaje"
                     onClick={sentFunction}
                   />
                 </div>

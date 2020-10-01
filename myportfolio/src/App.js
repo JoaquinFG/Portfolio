@@ -10,11 +10,11 @@ function App() {
       <Layout>
         <Drawer title="Joaquín Ferreira">
           <Navigation>
-            <Link to="/">Home</Link>
-            <Link to="/aboutme">About me</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/">Inicio</Link>
+            <Link to="/aboutme">Sobre mi</Link>
+            <Link to="/resume">Currículum</Link>
+            <Link to="/projects">Proyectos</Link>
+            <Link to="/contact">Contacto</Link>
           </Navigation>
         </Drawer>
         <Content>

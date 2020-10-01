@@ -5,6 +5,9 @@
   margin-left: 10%;
   margin-right: -10%;
 }
+.education a{
+  color: white;
+}
 
 /* --------------- Media Queries -------------- */
 
@@ -17,5 +20,23 @@
   }
   .education p{
     font-size: 12px;
+  }
+}
+
+//---------------- Animations ----------------
+
+.anim-education a{
+  animation-name: anim-education;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-education {
+  from {
+    color: #daa520;
+  }
+  to {
+    color: white;
   }
 }
