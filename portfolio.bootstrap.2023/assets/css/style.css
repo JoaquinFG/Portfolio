@@ -754,6 +754,10 @@ section {
   min-height: 320px;
 }
 
+.testimonials .testimonial-item .company-img {
+  
+}
+
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;

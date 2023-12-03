@@ -27,7 +27,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -43,11 +44,11 @@
         <img src="assets/img/profile-img1.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Joaquín Ferreira</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://www.facebook.com/joaquin.fg.16/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/joakin_fg/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/JoaquinFG" class="google-plus"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/joaquinferreirag/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -56,7 +57,7 @@
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Currículum</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portafolio</span></a></li>
+          <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portafolio</span></a></li> -->
           <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
         </ul>
@@ -96,8 +97,8 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong> <span>18 Septiembre 1987</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Web:</strong> <span>www.digitech.es</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>34 686 592 376</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Web:</strong> <span id="webLabel"></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span id="phoneLabel"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Localización:</strong> <span>Tenerife, Canarias</span></li>
                 </ul>
               </div>
@@ -105,7 +106,7 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>36</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Grado:</strong> <span>Superior</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>joaquin.ferreira@digitech.es</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span id="emailLabel"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
               </div>
@@ -262,59 +263,84 @@
             <div class="resume-item pb-0">
               <h4>Joaquín Ferreira</h4>
               <p><em>Con una sólida formación académica en Desarrollo de Software y un historial comprobado en el Desarrollo de Aplicaciones, he combinado mi pasión por la tecnología con habilidades prácticas. En mi paso por las diferentes Consultoras Tecnológicas, he demostrado un compromiso constante con la excelencia y la innovación.</em></p>
-              <ul>
-                <li>Canarias, España</li>
-                <li>(+34) 686 592 376</li>
-                <li>joaquin.ferreira@solditec.com</li>
-              </ul>
             </div>
-
-            <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Formación Académica</h3>
             <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>Desarrollo de Aplicaciones Multiplataformas</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>CIFP César Manrique. Tenerife</em></p>
+              <p>Grado Superior en Desarrollo de Aplicaciones Multiplataformas (DAM)</p>
+            </div>
+            <h3 class="resume-title">Formación Adicional</h3>
+            <div class="resume-item">
+              <h4>React.js</h4>
+              <h5>2020</h5>
+              <p><em>Platzi</em></p>
+              <p>Curso Profesional de React.js</p>
             </div>
             <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>SQL</h4>
+              <h5>2020</h5>
+              <p><em>OpenWebinars</em></p>
+              <p>Creación y administración de Bases de Datos SQL</p>
+            </div>
+            <div class="resume-item">
+              <h4>Javascript profesional</h4>
+              <h5>2020</h5>
+              <p><em>OpenWebinars</em></p>
+              <p>Curso de Javascript Profesional</p>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
+            <h3 class="resume-title">Experiencia Profesional</h3>
             <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Babel - Servicios y tecnología de la información.</h4>
+              <h5>2022 - Actual</h5>
+              <p><em>Tenerife, Islas Canarias, España</em></p>
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                  <li>Architect Fullstack. Tecnologías: Angular - Node.js - Oracle.</li>
               </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+          </div>
+          <div class="resume-item">
+              <h4>Bitbox S.L.</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Tenerife, Islas Canarias, España</em></p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                  <li>Fullstack Developer. Tecnologías: React - Spring Boot - Postgre.</li>
               </ul>
-            </div>
+          </div>
+          <div class="resume-item">
+              <h4>TeideInTech - eStragy: The Way Of Gamers</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>Tenerife, Islas Canarias, España</em></p>
+              <ul>
+                  <li>Fullstack Developer. Desarrollo de software con Angular, Node.js, API REST, MySQL, MongoDB, Git, AWS.</li>
+              </ul>
+          </div>
+          <div class="resume-item">
+              <h4>BeBangarang, Digital Agency</h4>
+              <h5>2019 - 2020</h5>
+              <p><em>Tenerife, Islas Canarias, España</em></p>
+              <ul>
+                  <li>Integraciones con diferentes tecnologías. HTML/CSS/JS, React y NodeJS.</li>
+              </ul>
+          </div>
+          <div class="resume-item">
+              <h4>Freelance</h4>
+              <h5>2019 - Actual</h5>
+              <p><em>Tenerife, Islas Canarias, España</em></p>
+              <ul>
+                  <li>Diseño Visual y Eficiencia UX: Creación de interfaces visuales atractivas y eficientes centradas en la experiencia del usuario.</li>
+                  <li>Desarrollo Responsivo y Optimización de Rendimiento: Implementación de sitios web adaptables y optimización continua para garantizar una experiencia rápida y consistente.</li>
+              </ul>
+          </div>
           </div>
         </div>
-
       </div>
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <!-- <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -428,47 +454,47 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> --><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
 
         <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Servicios</h2>
+          <p>En el universo digital, transformo ideas en realidades tecnológicas. Como experto en soluciones digitales, ofrezco servicios integrales que abarcan desde el diseño y desarrollo web hasta la gestión de dominios, correo y mucho más. Descubre cómo puedo potenciar tu presencia en línea y brindarte soluciones tecnológicas adaptadas a tus necesidades.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="icon"><i class="bi bi-browser-chrome"></i></div>
+            <h4 class="title"><a href="">Diseño Web Personalizado</a></h4>
+            <p class="description">Transforma tu visión en una presencia digital única. Diseño web a medida que refleja tu identidad y atrae a tu audiencia.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            <div class="icon"><i class="bi bi-person-vcard"></i></div>
+            <h4 class="title"><a href="">Currículum Vitae Online</a></h4>
+            <p class="description">Destaca tu trayectoria profesional con un currículum en línea moderno y atractivo. Impresiona a empleadores potenciales con una presentación digital de tu experiencia y habilidades.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-bar-chart"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            <div class="icon"><i class="bi bi-envelope"></i></div>
+            <h4 class="title"><a href="">Gestión de Correo Electrónico</a></h4>
+            <p class="description">Optimiza tu comunicación con un sistema de gestión de correo electrónico eficiente. Configuración, organización y seguridad para una experiencia de correo sin problemas.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="bi bi-binoculars"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="icon"><i class="bi bi-globe"></i></div>
+            <h4 class="title"><a href="">Registro y Gestión de Dominios</a></h4>
+            <p class="description">Asegura tu identidad en línea con el registro y gestión de dominios personalizados. Elige el nombre perfecto para tu marca y mantén el control total de tu presencia digital.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="bi bi-brightness-high"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            <div class="icon"><i class="bi bi-gear"></i></div>
+            <h4 class="title"><a href="">Hosting y Mantenimiento</a></h4>
+            <p class="description">Garantiza el rendimiento y la seguridad de tu sitio web con servicios de hosting confiables. Ofrezco soluciones de mantenimiento continuo para que puedas centrarte en tu negocio.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            <div class="icon"><i class="bi bi-info-circle"></i></div>
+            <h4 class="title"><a href="">Asesoramiento Tecnológico</a></h4>
+            <p class="description">Recibe asesoramiento experto para todas tus necesidades tecnológicas. Desde la elección de plataformas hasta la implementación de soluciones, estoy aquí para maximizar tu presencia digital.</p>
           </div>
         </div>
 
@@ -476,12 +502,12 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
+    <!-- <section id="testimonials" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Proyectos destacados</h2>
+          <p>Explora algunos de mis 'Proyectos Destacados', donde la creatividad y la tecnología se unen para dar vida a experiencias digitales únicas. Estos ejemplos representan mi enfoque innovador y la habilidad para transformar ideas en soluciones digitales impactantes. Descubre cómo puedo llevar tu visión al siguiente nivel.</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -490,15 +516,13 @@
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up">
                 <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <img src="assets/img/quimpi.png" class="company-img" alt="Quimpi Campamentos">
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Quim Ferreira</h3>
+                <h4>Ceo &amp; Cofounder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
@@ -511,7 +535,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
@@ -524,7 +548,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
@@ -537,7 +561,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
@@ -550,22 +574,22 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> --><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Contacto</h2>
+          <p>¿Listo para convertir tus ideas en realidad digital? Contacta conmigo y descubre cómo puedo ayudarte a alcanzar tus objetivos tecnológicos. ¡Envíame un mensaje y comencemos a construir juntos tu próxima solución digital!</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -574,23 +598,22 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Ubicación:</h4>
+                <p>Tenerife, Islas Canarias, España</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p id="emailParagraph"></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <h4>Teléfono:</h4>
+                <p id="phoneParagraph"></p>
               </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449683.94490829937!2d-16.852321477682914!3d28.29360362437962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4029effe8682ed%3A0xb01a4bf1c84baf3c!2sTenerife!5e0!3m2!1ses!2ses!4v1701635738259!5m2!1ses!2ses" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -599,28 +622,28 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">Nombre</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">Email</label>
                   <input type="email" class="form-control" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
+                <label for="name">Concepto</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="name">Mensaje</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Cargando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Tu mensaje ha sigo enviado correctamente</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
             </form>
           </div>
 
@@ -658,6 +681,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("webLabel").innerText = webLabel;
+    document.getElementById("phoneLabel").innerText = phoneLabel;
+    document.getElementById("emailLabel").innerText = emailLabel;
+    document.getElementById("phoneParagraph").innerText = phoneParagraph;
+    document.getElementById("emailParagraph").innerText = emailParagraph;
+  </script>
+
 
 </body>
 
